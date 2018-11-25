@@ -15,5 +15,7 @@ When trying to build the mDNS library, I'm getting build errors like:
 To fix this, I edited `arduinoPlugin/packages/esp8266/hardware/esp8266/2.4.2$ view platform.txt` and escaped the `"` around `"ARDUINO_BOARD"` at 3 places.
 
 ```-DARDUINO_BOARD=\"{build.board}\"```
+
 instead of
+
 ```-DARDUINO_BOARD="{build.board}"``` 
